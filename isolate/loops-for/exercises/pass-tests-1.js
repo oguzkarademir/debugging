@@ -4,8 +4,9 @@ function repeater(text, repeats) {
   if (typeof text !== 'string') { throw new TypeError(); }
   if (typeof repeats !== 'number') { throw new TypeError(); }
 
-  for (_; _; _) {
-
+  let result = '';
+  for (let i = 0; i < repeats; i++) {
+    result = result + i + text + " ";
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }

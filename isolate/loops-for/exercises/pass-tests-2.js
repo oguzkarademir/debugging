@@ -5,8 +5,13 @@ function alternator(range, str1, str2) {
   if (typeof str1 !== 'string') { throw new TypeError(); }
   if (typeof str2 !== 'string') { throw new TypeError(); }
 
-  for (_; _; _) {
-
+  let result = '';
+  for (let i = 1; i <=range; i++) {
+    if (i % 2 == 1) {
+      result += arguments[1];
+    } else if (i % 2 == 0) {
+      result += arguments[2];
+    }
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }

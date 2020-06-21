@@ -4,8 +4,11 @@ function repeater(text, repeats) {
   if (typeof text !== 'string') { throw new TypeError(); }
   if (typeof repeats !== 'number') { throw new TypeError(); }
 
-  while (_) {
-
+  let result = '';
+  let i = 0;
+  while (i < repeats) {
+    result += i + text + " ";
+    i++;
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }

@@ -5,8 +5,16 @@ function alternator(range, str1, str2) {
   if (typeof str1 !== 'string') { throw new TypeError(); }
   if (typeof str2 !== 'string') { throw new TypeError(); }
 
-  while (_) {
-
+  let result = '';
+  let i = 1;
+  while (i <= range) {
+    if (i % 2 == 1) {
+      result += arguments[1]; 
+    }
+    else if (i % 2 == 0) {
+      result += arguments[2];
+    }
+    i++;
   }
 
   if (typeof result !== 'string') { throw new TypeError(); }

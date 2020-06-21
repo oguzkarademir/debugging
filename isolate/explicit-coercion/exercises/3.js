@@ -7,6 +7,11 @@
 */
 function mystery(x, y) {
   // write some code!
+  if (Number(x) === Number(y) && Number(x) !== NaN && Number(y) !== NaN) {
+    return true;
+  } else { 
+    return false;
+  }
 }
 
 // all of the test cases are correct
